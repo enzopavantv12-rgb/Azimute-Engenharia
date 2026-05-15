@@ -8,7 +8,7 @@ export const Process = () => {
       'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=900&h=1200&fit=crop&q=80',
       'https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=900&h=1200&fit=crop&q=80',
       'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=900&h=1200&fit=crop&q=80',
-      'https://images.unsplash.com/photo-1541888081696-6e3e1fc843bb?w=900&h=1200&fit=crop&q=80'
+      'https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg?auto=compress&cs=tinysrgb&w=900&h=1200&dpr=2'
     ];
     
     const accents = [

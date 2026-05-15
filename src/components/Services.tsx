@@ -4,10 +4,10 @@ import { services } from '../lib/content';
 import { Button } from './ui/button';
 import { WhatsAppIcon } from './WhatsAppIcon';
 
-const unsplashImages = [
-  'https://images.unsplash.com/photo-1541888081696-6e3e1fc843bb?q=80&w=2070&auto=format&fit=crop', // Infraestrutura
+const serviceImages = [
+  '/assets/services/infraestrutura.png', // Infraestrutura
   'https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=2070&auto=format&fit=crop', // Sala Tecnica
-  'https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=2070&auto=format&fit=crop', // Topografia
+  '/assets/services/topografia.png', // Topografia
 ];
 
 const AccordionItem = ({ item, image, isActive, onMouseEnter }: any) => {
@@ -133,7 +133,7 @@ export const Services = () => {
                 <AccordionItem
                   key={service.title}
                   item={service}
-                  image={unsplashImages[index]}
+                  image={serviceImages[index]}
                   isActive={index === activeIndex}
                   onMouseEnter={() => setActiveIndex(index)}
                 />
