@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import { motion } from 'framer-motion';
-import { MoveRight, PhoneCall } from 'lucide-react';
+import { MoveRight } from 'lucide-react';
+import { WhatsAppIcon } from './WhatsAppIcon';
 import { Button } from './ui/button';
 import { UpgradeBanner } from './ui/upgrade-banner';
 import { buildWhatsAppLink, WA_MESSAGES } from '../lib/whatsapp';
@@ -113,7 +114,7 @@ export const Hero = () => {
           >
             <Button size="lg" className="gap-4 group" asChild>
               <a href={buildWhatsAppLink(WA_MESSAGES.hero)} target="_blank" rel="noopener noreferrer">
-                Falar pelo WhatsApp <PhoneCall className="w-4 h-4 transition-transform duration-300 group-hover:scale-110" />
+                Falar pelo WhatsApp <WhatsAppIcon size={16} color="#FFFFFF" className="w-4 h-4 transition-transform duration-300 group-hover:scale-110" />
               </a>
             </Button>
             <Button size="lg" variant="outline" className="gap-4 group dark:border-[#FAFAF7]/20 dark:text-[#FAFAF7] dark:hover:bg-[#FAFAF7]/10" asChild>

@@ -155,10 +155,11 @@ const GalleryModal = ({ selectedItem, isOpen, onClose, setSelectedItem, mediaIte
 
             >
                 {/* Main Content */}
-                <div className="h-full flex flex-col justify-center items-center">
+                <div className="h-full flex flex-col justify-center items-center" onClick={onClose}>
                     <div className="w-full flex-1 p-4 md:p-8 flex items-center justify-center">
                         <AnimatePresence mode="wait">
                             <motion.div
+                                onClick={(e) => e.stopPropagation()}
                                 key={selectedItem.id}
                                 className="relative w-full max-w-[90%] md:max-w-5xl 
                                          h-auto max-h-[85vh] rounded-lg overflow-hidden shadow-2xl bg-azimute-black"
@@ -311,7 +312,7 @@ export const InteractiveBentoGallery: React.FC<InteractiveBentoGalleryProps> = (
                     <motion.div
                         key={item.id}
                         layoutId={`media-${item.id}`}
-                        className={`relative overflow-hidden rounded-sm cursor-pointer group ${item.span}`}
+                        className={`relative overflow-hidden rounded-2xl cursor-pointer group bg-azimute-dark-paper border border-azimute-black/5 dark:border-white/5 transition-all duration-500 hover:shadow-[0_0_40px_rgba(37,99,235,0.15)] hover:border-azimute-blue/30 ${item.span}`}
                         onClick={() => setSelectedItem(item)}
                         variants={{
                             hidden: { y: 24, scale: 0.95, opacity: 0 },
@@ -327,29 +328,32 @@ export const InteractiveBentoGallery: React.FC<InteractiveBentoGalleryProps> = (
                                 }
                             }
                         }}
-                        whileHover={{ scale: 1.02 }}
+                        whileHover={{ y: -4 }}
                     >
                         <MediaItem
                             item={item}
-                            className="absolute inset-0 w-full h-full transition-transform duration-700 ease-out group-hover:scale-105"
+                            className="absolute inset-0 w-full h-full transition-transform duration-700 ease-out group-hover:scale-110"
                             onClick={() => setSelectedItem(item)}
                         />
-                        <motion.div
+                        <div
                             className="absolute inset-0 flex flex-col justify-end p-6 md:p-8"
-                            initial={{ opacity: 0 }}
-                            whileHover={{ opacity: 1 }}
-                            transition={{ duration: 0.3 }}
                         >
-                            <div className="absolute inset-0 bg-gradient-to-t from-azimute-black/90 via-azimute-black/40 to-transparent" />
-                            <div className="relative z-10 translate-y-4 group-hover:translate-y-0 transition-transform duration-500 ease-out">
-                                <span className="block text-azimute-gold text-[10px] font-bold uppercase tracking-[0.15em] mb-2">
+                            <div className="absolute inset-0 bg-gradient-to-t from-azimute-black/95 via-azimute-black/50 to-transparent opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-opacity duration-500 ease-out" />
+                            <div className="relative z-10 translate-y-0 lg:translate-y-4 lg:group-hover:translate-y-0 transition-transform duration-500 ease-out opacity-100 lg:opacity-0 lg:group-hover:opacity-100">
+                                <span className="block text-azimute-blue text-[11px] font-bold uppercase tracking-[0.15em] mb-2 drop-shadow-md">
                                     {item.title}
                                 </span>
-                                <p className="text-[#FAFAF7] text-[15px] font-medium leading-snug">
+                                <p className="text-[#FAFAF7] text-[14px] md:text-[15px] font-medium leading-relaxed mb-4 drop-shadow-md">
                                     {item.desc}
                                 </p>
+                                <div className="inline-flex items-center text-[11px] font-semibold tracking-wider uppercase text-white/90 group/btn">
+                                  VER PROJETO
+                                  <svg className="w-4 h-4 ml-2 transform group-hover/btn:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                                  </svg>
+                                </div>
                             </div>
-                        </motion.div>
+                        </div>
                     </motion.div>
                 ))}
             </motion.div>

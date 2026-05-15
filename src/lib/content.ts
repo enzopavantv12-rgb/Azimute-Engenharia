@@ -74,51 +74,51 @@ export const faqs = [
 
 export const portfolioItems = [
   { 
-    src: 'https://images.unsplash.com/photo-1541888081696-6e3e1fc843bb?w=900&h=1200&fit=crop&q=80', 
+    src: '/assets/portfolio/projeto-geometrico.png', 
     label: 'Projeto Geométrico', 
-    desc: 'Desenvolvimento do traçado de via com integração rodoviária completa. Este projeto envolveu estudo de viabilidade, definição de curvas de concordância horizontais e verticais, além de garantir parâmetros de segurança e fluidez para tráfego pesado e leve, atendendo rigorosamente às normas técnicas vigentes (DNIT/DER).', 
+    desc: 'Projetos viários com precisão geométrica, segurança e integração urbana.', 
     tall: false 
   },
   { 
-    src: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=900&h=1200&fit=crop&q=80', 
-    label: 'Terraplenagem', 
-    desc: 'Modelagem 3D e cálculo volumétrico para projeto de loteamento residencial de médio e alto padrão. O trabalho focou na otimização da movimentação de terra (corte e aterro), minimizando custos logísticos de transporte (bota-fora e jazida) e garantindo a estabilidade de taludes e platôs perfeitamente nivelados.', 
+    src: '/assets/portfolio/terraplanagem.png', 
+    label: 'Terraplanagem', 
+    desc: 'Planejamento de movimentação de terra com estabilidade e eficiência executiva.', 
     tall: true 
   },
   { 
-    src: 'https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=900&h=1200&fit=crop&q=80', 
+    src: '/assets/portfolio/pavimentacao.png', 
     label: 'Pavimentação', 
-    desc: 'Dimensionamento da estrutura do pavimento e detalhamento de seção transversal. O escopo considerou estudos geotécnicos do subleito, dimensionamento de base, sub-base e revestimento asfáltico (CBUQ), assegurando a durabilidade da via contra fadiga e deformações sob carga projetada.', 
+    desc: 'Projetos de pavimentação urbana e rodoviária com foco em durabilidade.', 
     tall: false 
   },
   { 
-    src: 'https://images.unsplash.com/photo-1444723121867-7a241cacace9?w=900&h=1200&fit=crop&q=80', 
+    src: '/assets/portfolio/planta-topografica.png', 
     label: 'Planta Topográfica', 
-    desc: 'Levantamento planialtimétrico cadastral de área rural para fins de parcelamento e georreferenciamento. Utilização de equipamentos GNSS RTK de alta precisão e Estação Total para mapeamento de divisas, acidentes geográficos, áreas de preservação e benfeitorias existentes.', 
+    desc: 'Levantamentos topográficos precisos para obras e regularizações.', 
     tall: false 
   },
   { 
-    src: 'https://images.unsplash.com/photo-1503708928676-1cb796a0891e?w=900&h=1200&fit=crop&q=80', 
+    src: '/assets/portfolio/planta-locacao.png', 
     label: 'Planta de Locação', 
-    desc: 'Planta de implantação com sistema de coordenadas georreferenciadas para início de obras. Fornecimento de eixos, gabaritos e marcos topográficos para garantir a transferência exata do que foi projetado em escritório para o campo (Zero Retrabalho).', 
+    desc: 'Locação técnica precisa para execução segura e alinhada ao projeto.', 
     tall: true 
   },
   { 
-    src: 'https://images.unsplash.com/photo-1584466977773-e625c37cdd50?w=900&h=1200&fit=crop&q=80', 
+    src: '/assets/portfolio/abastecimento-agua.png', 
+    label: 'Abastecimento d’Água', 
+    desc: 'Projetos hidráulicos e redes de abastecimento sustentáveis.', 
+    tall: false 
+  },
+  { 
+    src: '/assets/portfolio/drenagem-pluvial.png', 
     label: 'Drenagem Pluvial', 
-    desc: 'Projeto completo de captação e escoamento de águas pluviais em loteamento urbano. Incluiu cálculos hidrológicos, dimensionamento de bocas de lobo, poços de visita, tubulações de concreto e dissipadores de energia, prevenindo alagamentos e erosões no empreendimento.', 
+    desc: 'Soluções de drenagem urbana para prevenção de alagamentos.', 
     tall: false 
   },
   { 
-    src: 'https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=900&h=1200&fit=crop&q=80', 
+    src: '/assets/portfolio/rede-esgoto.png', 
     label: 'Rede de Esgoto', 
-    desc: 'Dimensionamento da rede coletora de esgoto sanitário para implantação em loteamento urbano. O projeto contempla traçado da rede, dimensionamento hidráulico-sanitário, definição de declividades mínimas e locação de poços de visita, seguindo diretrizes da concessionária local.', 
-    tall: false 
-  },
-  { 
-    src: 'https://images.unsplash.com/photo-1542361345-89e58247f2d5?w=900&h=1200&fit=crop&q=80', 
-    label: 'Abastecimento de Água', 
-    desc: 'Projeto de rede de distribuição de água potável em loteamento. Compreende o cálculo de vazão, dimensionamento da rede malhada, verificação de pressões nas pontas de rede e detalhamento de peças especiais, garantindo o abastecimento contínuo a todos os lotes.', 
+    desc: 'Infraestrutura sanitária planejada para eficiência urbana.', 
     tall: false 
   },
 ] as const;

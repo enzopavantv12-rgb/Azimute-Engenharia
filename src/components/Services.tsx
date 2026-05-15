@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { services } from '../lib/content';
 import { Button } from './ui/button';
-import { PhoneCall } from 'lucide-react';
+import { WhatsAppIcon } from './WhatsAppIcon';
 
 const unsplashImages = [
   'https://images.unsplash.com/photo-1541888081696-6e3e1fc843bb?q=80&w=2070&auto=format&fit=crop', // Infraestrutura
@@ -118,7 +118,7 @@ export const Services = () => {
                   <Button size="lg" className="gap-3 group" asChild>
                     <a href={activeService.ctaLink} target="_blank" rel="noopener noreferrer">
                       Orçamento para {activeService.title.split(' ')[0]}
-                      <PhoneCall className="w-4 h-4 transition-transform duration-300 group-hover:scale-110" />
+                      <WhatsAppIcon size={16} color="#1F1713" className="w-4 h-4 transition-transform duration-300 group-hover:scale-110" />
                     </a>
                   </Button>
                 </div>
