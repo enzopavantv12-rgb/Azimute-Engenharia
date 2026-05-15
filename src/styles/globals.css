@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html { scroll-behavior: smooth; }
+body { margin: 0; padding: 0; background: #FAFAF7; color: #1F1713; font-family: 'DM Sans', system-ui, sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: optimizeLegibility; transition: background-color 0.5s ease, color 0.5s ease; }
+html.dark body { background: #0D131A; color: #FAFAF7; }
+
+::selection { background: rgba(223, 204, 91, 0.5); color: #1F1713; }
+html.dark ::selection { background: rgba(44, 101, 168, 0.5); color: #FAFAF7; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
